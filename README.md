@@ -102,10 +102,22 @@ phenotype-hub/
 └── Cargo.toml
 ```
 
+## Governance & Contributing
+
+- **CLAUDE.md** — Project governance and workspace conventions
+- **PRD.md** — Product requirements and feature prioritization
+- **AGENTS.md** — Agent operating contract and testing guide
+- **Functional Requirements**: [docs/FUNCTIONAL_REQUIREMENTS.md](docs/FUNCTIONAL_REQUIREMENTS.md)
+- **Architecture**: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- **Changelog**: [CHANGELOG.md](CHANGELOG.md)
+
+All work requires AgilePlus spec before implementation. See CLAUDE.md for mandate details.
+
 ## Related Phenotype Projects
 
-- **AuthKit**: Unified authentication backend (phenotype-hub uses for auth)
-- **phenotype-ops-mcp**: MCP server for hub management and configuration
-- **Tracera**: Observability (hub exports traces and metrics)
-- **AgilePlus**: Work tracking (hub can track workflow orchestration)
-- **cloud**: Multi-tenant platform (hub provides routing layer)
+- **[AuthKit](../AuthKit/)** — Unified authentication backend; hub uses for auth and API key validation
+- **[phenotype-ops-mcp](../phenotype-ops-mcp/)** — MCP server for hub management, configuration, and dynamic updates
+- **[Tracera](../Tracera/)** — Distributed tracing; hub exports all request traces and metrics
+- **[PhenoObservability](../PhenoObservability/)** — Metrics collection and dashboard integration
+- **[AgilePlus](../AgilePlus/)** — Work tracking and workflow orchestration
+- **[cloud](../cloud/)** — Multi-tenant platform; hub provides unified routing layer
