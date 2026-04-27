@@ -9,10 +9,12 @@ Extends parent governance. See the following for canonical definitions:
 ## Project Overview
 
 - **Name:** phenotype-hub
-- **Description:** [Short description from README]
-- **Location:** [Relative path in repos]
-- **Language Stack:** [Primary languages]
-- **Status:** [Active/Archived/Experimental]
+- **Description:** Phenotype org hub scaffold for governance, repository
+  discovery, and future service-routing decisions
+- **Location:** `/Users/kooshapari/CodeProjects/Phenotype/repos/phenotype-hub`
+- **Language Stack:** Governance/docs scaffold; implementation stack not yet
+  populated
+- **Status:** Active scaffold
 
 ## AgilePlus Mandate
 
