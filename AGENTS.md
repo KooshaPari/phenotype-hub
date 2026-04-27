@@ -4,7 +4,8 @@ This file governs work inside the phenotype-hub repository.
 
 ## Identity
 
-phenotype-hub is a [brief description of purpose and role in Phenotype ecosystem].
+phenotype-hub is the Phenotype org hub scaffold for governance, repository
+discovery, future service-routing decisions, and cross-project coordination.
 
 Do not apply parent shelf instructions (`/Users/kooshapari/CodeProjects/Phenotype/repos/AGENTS.md`) unless explicitly referenced. Work from this directory and treat paths as local to phenotype-hub.
 
