@@ -1,5 +1,8 @@
 # phenotype-hub
 
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Central coordination repository for the Phenotype ecosystem: governance
 scaffolding, repository discovery, and future service-routing decisions.
 
