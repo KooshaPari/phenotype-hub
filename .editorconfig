@@ -10,10 +10,10 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
-[*.{rs,toml,py,go,md,yaml,yml,json,html,css,scss}]
+[*.{rs,toml,py,go,md,json,html,css,scss}]
 indent_size = 4
 
-[*.{ts,tsx,js,jsx,mjs,cjs}]
+[*.{ts,tsx,js,jsx,mjs,cjs,yaml,yml}]
 indent_size = 2
 
 [Makefile]
