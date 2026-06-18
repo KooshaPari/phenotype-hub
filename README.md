@@ -41,3 +41,11 @@ Edit the markdown documents directly.
 
 - Canonical repo: https://github.com/KooshaPari/phenotype-hub
 - Phenotype ecosystem: https://github.com/KooshaPari
+
+## Documentation
+
+This repository includes the following cross-cutting documents:
+
+- [`AGENTS.md`](AGENTS.md) — operating instructions for AI agents and human contributors
+- [`docs/`](docs/) — design notes, ADRs, and supporting documentation (see [`docs/index.md`](docs/index.md))
+
