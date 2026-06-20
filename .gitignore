@@ -40,3 +40,6 @@ coverage/
 *.tmp
 *.bak
 *.orig
+
+# Generated CI/audit artifacts
+linter-output.json
