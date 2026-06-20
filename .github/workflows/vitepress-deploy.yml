@@ -9,13 +9,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4@11bd71901bbe5b1630ceea73d27597364c9af683
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4@cdca7365b2dadb8aad0a33bc7601856ffabcc48e
         with:
-          node-version: '20'
-      - uses: actions/configure-pages@v5
+          node-version: ${{ vars.PH_NODE_VERSION || '20' }}
+      - uses: actions/configure-pages@v5@f5c9e6c90e0d000c4ac23b8123a0a1b72541c1f7
       - name: Install dependencies
         run: |
           if [ -f docs/package.json ]; then npm ci;
@@ -25,11 +25,11 @@ jobs:
           if [ -f docs/package.json ]; then npm run docs:build;
           else npx vitepress build docs; fi
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
           path: docs/.vitepress/dist
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v4@121bd895196a1e2660e82e317e4aaaeaf13f0ddd
 permissions:
   contents: read
 

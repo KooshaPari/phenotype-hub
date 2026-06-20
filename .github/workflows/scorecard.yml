@@ -2,7 +2,7 @@ name: OpenSSF Scorecard
 on:
   branch_protection_rule:
   schedule:
-    - cron: '17 3 * * 6'
+    - cron: ${{ vars.PH_CRON_SCORECARD || '17 3 * * 6' }}
   push:
     branches: [main]
 permissions:
@@ -40,7 +40,7 @@ jobs:
         with:
           name: SARIF file
           path: results.sarif
-          retention-days: 5
+          retention-days: ${{ vars.PH_ARTIFACT_RETENTION_DAYS || '5' }}
 
       - uses: github/codeql-action/upload-sarif@v4
         with:

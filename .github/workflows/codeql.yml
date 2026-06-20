@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '17 4 * * 1'
+    - cron: ${{ vars.PH_CRON_CODEQL || '17 4 * * 1' }}
 permissions:
   contents: read
 
@@ -23,5 +23,5 @@ jobs:
       actions: read
       security-events: write
     with:
-      languages: '["actions"]'
-      build-mode: 'none'
+      languages: ${{ vars.PH_CODEQL_LANGUAGES || '["actions"]' }}
+      build-mode: ${{ vars.PH_CODEQL_BUILD_MODE || 'none' }}
